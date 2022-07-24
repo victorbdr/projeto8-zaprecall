@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  align-content: center;
+  background-color: #fb6b6b;
+}
+button {
+  width: 300px;
+  height: 65px;
+  background: #ffffff;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.perguntas {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
