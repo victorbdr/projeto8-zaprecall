@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  background-color: #fb6b6b;
+  flex-direction: column;
+  align-items: center;
+}
+.topo {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.012em;
+  color: white;
+  font-family: "Righteous";
+  margin-top: 48px;
+  flex-direction: row;
+  justify-content: center;
+}
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@media (max-width: 600px) {
+  body {
+    display: flex;
+  }
+}

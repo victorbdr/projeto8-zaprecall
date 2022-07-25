@@ -1,0 +1,40 @@
+body {
+  font-family: "Recursive";
+}
+.botaoVerde {
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 85.17px;
+  height: 37.17px;
+  background-color: green;
+}
+.botaoAmarelo {
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 85.17px;
+  height: 37.17px;
+  background-color: yellow;
+}
+.botaoVermelho {
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 85.17px;
+  height: 37.17px;
+  background-color: red;
+}
+.botaocontainer {
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: 26px;
+}
+.flash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
