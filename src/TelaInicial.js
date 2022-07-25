@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./telainicial.css";
+import "./Estilo/telainicial.css";
 export default function TelaInicial() {
   return (
     <>

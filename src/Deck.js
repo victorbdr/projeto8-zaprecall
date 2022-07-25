@@ -1,14 +1,20 @@
 import React from "react";
-import "./Deck.css";
+import "./Estilo/Deck.css";
 import FlashCard from "./FlashCard";
-export default function Deck() {
+
+export default function Deck(props) {
   const decks = ["Pergunta 1", "Pergunta 2", "Pergunta 3", "Pergunta 4"];
 
   return (
     <>
       {decks.map((deck, index) => (
         <div className="Pergunta">
-          <Conteudo baralho={deck} index={index} />
+          <Conteudo
+            baralho={deck}
+            index={index}
+            contador={props.contador}
+            setContador={props.setContador}
+          />
         </div>
       ))}
     </>
@@ -40,6 +46,8 @@ function Conteudo(props) {
               setClicado(false);
               setStatus(answerStatus);
             }}
+            contador={props.contador}
+            setContador={props.setContador}
           />
         ) : (
           <div className="botoes">

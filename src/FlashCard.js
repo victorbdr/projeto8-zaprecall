@@ -1,5 +1,6 @@
 import React from "react";
-import "./flashcard.css";
+import "./Estilo/flashcard.css";
+
 export default function FlashCard(props) {
   const questions = [
     {
@@ -33,6 +34,7 @@ export default function FlashCard(props) {
         "dizer para o React quais informações quando atualizadas devem renderizar a tela novamente",
     },
   ];
+
   return (
     <>
       <TurnAround
@@ -41,11 +43,15 @@ export default function FlashCard(props) {
         key={props.index}
         mostraResposta={props.mostraResposta}
         onAnswer={props.onAnswer}
+        contador={props.contador}
+        setContador={props.setContador}
       />
     </>
   );
 }
+
 function TurnAround(props) {
+  console.log(props);
   return (
     <div className="flash">
       {!props.mostraResposta ? (
@@ -54,18 +60,30 @@ function TurnAround(props) {
         <>
           {props.answer}
           <div className="botaocontainer">
-            <div className="botaoVerde" onClick={() => props.onAnswer("Zap!")}>
+            <div
+              className="botaoVerde"
+              onClick={() => {
+                props.onAnswer("Zap!");
+                props.setContador([...props.contador, "Zap!"]);
+              }}
+            >
               Zap!
             </div>
             <div
               className="botaoAmarelo"
-              onClick={() => props.onAnswer("Quase não lembrei")}
+              onClick={() => {
+                props.onAnswer("Quase não lembrei");
+                props.setContador([...props.contador, "Quase não lembrei"]);
+              }}
             >
               Quase não lembrei
             </div>
             <div
               className="botaoVermelho"
-              onClick={() => props.onAnswer("Não lembrei")}
+              onClick={() => {
+                props.onAnswer("Não lembrei");
+                props.setContador([...props.contador, "Não lembrei"]);
+              }}
             >
               Não lembrei
             </div>

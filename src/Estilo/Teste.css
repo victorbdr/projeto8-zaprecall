@@ -28,3 +28,12 @@ body {
   width: 52px;
   height: 60px;
 }
+.green {
+  color: green;
+}
+.yellow {
+  color: orange;
+}
+.red {
+  color: red;
+}

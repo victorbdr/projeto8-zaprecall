@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TelaInicial from "./TelaInicial";
 import Teste from "./Teste";
-import "./app.css";
+import "./Estilo/app.css";
 
 export default function App() {
   return (
